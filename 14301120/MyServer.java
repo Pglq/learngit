@@ -10,9 +10,8 @@ import java.net.Socket;
 
 public class MyServer {  
 	   
-	   public static void main(String args[]) throws IOException {  
-	     int port = 8899;  
-	     ServerSocket server = new ServerSocket(8899);  
+	   public static void main(String args[]) throws IOException {    
+	     ServerSocket server = new ServerSocket(3333);  
 	      while (true) {  
 	         Socket socket = server.accept();  
 	         new Thread(new threads(socket)).start();  
